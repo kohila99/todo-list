@@ -1,0 +1,95 @@
+button {
+  cursor: pointer;
+  box-shadow: 0px 0px 0px black;
+  padding: 0.2rem 0.5rem;
+}
+
+button:hover {
+  box-shadow: 2px 2px 7px black;
+}
+
+input {
+  outline: 0px;
+  border-width: 3px;
+}
+
+.icon {
+  width: 0.8rem;
+  height: 0.8rem;
+  fill: white;
+  background-color: transparent;
+}
+
+.danger-btn {
+  background-color: red;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.info-btn {
+  background-color: blue;
+  color: white;
+  font-size: 1.2rem;
+}
+
+/***************Container Css*******************/
+
+div[class*="page-container"] {
+  justify-content: center;
+}
+
+div[class*="app-container"] {
+  width: 18rem;
+  margin: 1rem;
+}
+
+/****************Form*******************/
+
+div[class*="input-container"] {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+p.name-error {
+  color: red;
+  margin-bottom: 1rem;
+}
+
+input[class*="input-error"] {
+  border: 3px solid red;
+}
+
+input.input-not-error {
+  border: 3px solid green;
+}
+.tick-btn {
+  margin-right: 1rem;
+}
+
+/******************List*********************/
+
+ul[class*="name-list"] {
+  margin-top: 1rem;
+  list-style: none;
+}
+
+ul[class*="name-list"] li {
+  border: 4px solid black;
+  display: flex;
+  min-height: 3.3rem;
+  justify-content: space-between;
+  padding: 0.5rem;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+}
+
+ul button.edit-btn {
+  margin-right: 1rem;
+}
+
+ul li.blue-border {
+  border: 4px solid blue;
+}
