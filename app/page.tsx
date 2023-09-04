@@ -6,7 +6,7 @@ const App = () => {
       <div className="flex justify-between">
         <input type="text" className="border border-black" />
         <div>
-          <button className="bg-green-500 mr-2 text-white px-2 rounded">
+          <button className="bg-blue-500 mr-2 text-white px-2 rounded">
             Update
           </button>
           <button className="bg-red-500 text-white px-2 rounded">Cancel</button>
@@ -19,10 +19,10 @@ const App = () => {
           Arun
           <div className="flex">
             <button>
-              <FaPencil className="mr-3" />
+              <FaPencil className="mr-3 text-blue-500" />
             </button>
             <button>
-              <FaTrashCan />
+              <FaTrashCan className=" text-red-500" />
             </button>
           </div>
         </li>
@@ -30,10 +30,10 @@ const App = () => {
           Kohi
           <div className="flex">
             <button>
-              <FaPencil className="mr-3" />
+              <FaPencil className="mr-3  text-blue-500" />
             </button>
             <button>
-              <FaTrashCan />
+              <FaTrashCan className=" text-red-500" />
             </button>
           </div>
         </li>
@@ -41,10 +41,10 @@ const App = () => {
           Ayron
           <div className="flex">
             <button>
-              <FaPencil className="mr-3" />
+              <FaPencil className="mr-3 text-blue-500" />
             </button>
             <button>
-              <FaTrashCan />
+              <FaTrashCan className=" text-red-500" />
             </button>
           </div>
         </li>
