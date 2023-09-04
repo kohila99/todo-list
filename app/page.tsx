@@ -1,5 +1,13 @@
+"use client";
+
 const App = () => {
-  return <div className="w-1/3 m-auto mt-10"></div>;
+  alert("hi");
+  return (
+    <div className=" mt-5">
+      <input type="text" className="border border-black" />
+      <button className=" bg-blue-500">Add</button>
+    </div>
+  );
 };
 
 export default App;
