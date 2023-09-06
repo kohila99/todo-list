@@ -3,14 +3,17 @@
 import { useState } from "react";
 
 const App = () => {
-  const [state, setState] = useState("");
+  let [state, setState] = useState("");
+  let [arr, setArr] = useState(["ayron", "kohi", "niami"]);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setState(e.target.value);
   };
+
   const handleClick = () => {
-    alert(state);
+    setArr([...arr, state]);
   };
+
   return (
     <div className=" mt-5 m-auto w-1/3">
       <input
@@ -22,9 +25,9 @@ const App = () => {
         Add
       </button>
       <ul>
-        <li>Ayron</li>
-        <li>Niami</li>
-        <li>Kohi</li>
+        {arr.map((value, index) => (
+          <li key={index}> {value} </li>
+        ))}
       </ul>
     </div>
   );
